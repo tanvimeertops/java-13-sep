@@ -1,13 +1,22 @@
 package com.basic;
 /*
- * 11. Two numbers are C=10 and D=20. 
- * Write a program to interchange the contents
- *  of C and D.
+ * .If a five-digit number 12345, write a
+program to reverse the number.
+
 
  */
 public class Task1 {
 public static void main(String[] args) {
-	int C=10,D=20;
+	int num=12345,rem,rev=0;
+	System.out.println("Actual number "+num);
+	while (num!=0) { 
+		rem=num%10;//1
+		num=num/10; //0
+		rev=rev*10+rem; //54321
+	}
+	System.out.println("revrse no is :"+rev);
+	
+	
 	
 }
 }
